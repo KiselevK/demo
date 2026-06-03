@@ -1,11 +1,11 @@
 def calculate(a, op, b):
-    if op == '+':
+    if op == "+":
         return a + b
-    elif op == '-':
+    elif op == "-":
         return a - b
-    elif op == '*':
+    elif op == "*":
         return a * b
-    elif op == '/':
+    elif op == "/":
         if b == 0:
             raise ValueError("Division by zero")
         return a / b
@@ -15,12 +15,11 @@ def calculate(a, op, b):
 
 def main():
     print("Simple Calculator")
-    print("Operators: + - * /")
     print("Type 'exit' to quit\n")
 
     while True:
         expression = input("Enter expression (e.g. 3 + 5): ").strip()
-        if expression.lower() == 'exit':
+        if expression.lower() == "exit":
             break
 
         parts = expression.split()
